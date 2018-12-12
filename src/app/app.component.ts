@@ -10,7 +10,7 @@ export class AppComponent implements AfterViewInit {
   title = 'elm-with-an-angle';
 
   @ViewChild('elmTarget')
-  elmTarget: ElementRef;
+  elmTarget: ElementRef<HTMLDivElement>;
 
   ngAfterViewInit(): void {
     ElmMain.init({
