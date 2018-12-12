@@ -1,6 +1,8 @@
 import { Component } from '@angular/core';
 import { Foo } from './elm/foo';
-import { Main } from './elm/Main';
+import { Elm } from './elm/Main';
+
+Elm.Main.init({ node: document.querySelector('main') });
 
 const f = new Foo();
 
